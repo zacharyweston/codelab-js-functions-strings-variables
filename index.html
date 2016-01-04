@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Create a user profile</title>
+  </head>
+  <body>
+    <header>
+       <h1>Create a new user</h1>
+    </header>
+    <main>
+      <p>Name: <b id="nameField"></b></p>
+      <p>Favorite color: <b id=colorField></b></p>
+      <p>Favorite author: <b id=authorField></b></p>
+
+      <script>
+        var nameInput = prompt("What is your name?", "Enter name here");
+        var colorInput = prompt("Hi " + nameInput + "! What is your favorite color?");
+        var authorInput = prompt("Great! " + nameInput + ", who is your favorite author?");
+        document.getElementById("nameField").innerHTML = nameInput;
+        document.getElementById("colorField").innerHTML = colorInput;
+        document.getElementById("authorField").innerHTML = authorInput;
+      </script>
+      
+    </main
+  </body>
+</html>
